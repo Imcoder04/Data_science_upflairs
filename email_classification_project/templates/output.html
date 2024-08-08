@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your prediction is here :</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            font-size: 2em;
+            padding: 50px;
+            background: linear-gradient(135deg, #ff758c 10%, #ff7eb3 100%);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff9a9e, 0 0 30px #ff758c, 0 0 40px #ff7eb3;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff9a9e, 0 0 40px #ff758c, 0 0 50px #ff7eb3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5em;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.2em;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Your message is : {{ output }}</h2>
+</body>
+</html>
