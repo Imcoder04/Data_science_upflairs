@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>Farmer's Crop Prediction Project</i></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #339258;
+            color: #333;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 5px #97c4f3, 0 0 10px #97c4f3, 0 0 15px #97c4f3;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px #97c4f3, 0 0 15px #97c4f3, 0 0 20px #97c4f3;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile-section img {
+            border-radius: 15px;
+            border: 3px solid #333;
+            width: 300px;
+            height: 150px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px #339258, 0 0 10px #339258, 0 0 10px #339258;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            text-indent: -20px;
+        }
+        ul li:before {
+            content: "•";
+            color: #00ff55;
+            padding-right: 10px;
+        }
+        h3 {
+            margin-top: 30px;
+        }
+        p, ul {
+            line-height: 1.6;
+        }
+        .glow {
+            color: #333;
+            text-shadow: 0 0 5px #fff, 0 0 10px #339258, 0 0 15px #339258, 0 0 20px #339258;
+        }
+        .myglow{
+            color: #333;
+            text-shadow: 0 0 5px #fff, 0 0 10px #00ff55;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-section img {
+                margin: 0 0 20px 0;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="glow">Farmer's Crop Prediction System</h1>
+    </div>
+
+    <div class="container">
+        <h2 class="myglow">Overview</h2>
+        <p><i>The "AI Farmer Guide" is designed to assist farmers in
+             selecting the optimal crop based on various factors 
+             such as temperature, pH levels, and the amounts of 
+             nitrogen, oxygen, and potassium in the soil. This 
+             tool aims to enhance crop production by providing 
+             tailored recommendations that align with the specific 
+             conditions of their farmland.
+        </i></p>
+
+        <a href="/index" class="button">Predict Crop</a>
+
+        <hr>
+
+        <h2 class="myglow">SANJANA SANWARIYA</h2>
+
+        <div class="profile-section" class="myglow">
+            <img src="./static/image.jpeg" alt="Profile Picture">
+            <p><i>Warm greetings!!! I am a dedicated computer science engineering student. Passionate about web development, data science, AI, and machine learning. I have expertise in programming languages like Python, Java, C++, and C.</i></p>
+        </div>
+
+        <hr>
+
+        <h2 class="myglow">Project Details</h2>
+
+        <h3 class="myglow">Dependent Factors:-</h3>
+            <ul>
+                <li><i>Temperature: The average temperature of the farming area, which influences the growth and health of crops.</i></li>
+                <li><i>Humidity: The moisture level in the air, essential for crop transpiration and growth.</i></li>
+                <li><i>pH Level: The acidity or alkalinity of the soil, affecting nutrient availability and microbial activity.</i></li>
+                <li><i>Nitrogen: A key nutrient that supports plant growth and leaf development.</i></li>
+                <li><i>Phosphorus: Essential for root development and energy transfer within the plant.</i></li>
+                <li><i>Potassium: Important for water regulation, enzyme activation, and overall plant health.</i></li>
+                <li><i>Rainfall: The amount of precipitation, crucial for water supply to crops.</i></li>
+            </ul>
+            <h3 class="myglow">Technologies and tools:-</h3>
+            <ul>
+                <h4 class="myglow">Python Libraries:-</h4>
+                <li><i>Flask: Used for developing the web application and creating a user-friendly interface.</i></li>
+                <li><i>NumPy: Utilized for numerical computations and handling arrays.</i></li>
+                <li><i>pandas: Employed for data manipulation and analysis.</i></li>
+                <li><i>scikit-learn: Used for implementing machine learning algorithms and data preprocessing.
+                </i></li>
+                <h4 class="myglow">Machine learning Algorithm:-</h4>
+                <li><i>K-means Clustering: Applied for grouping similar data points and identifying patterns in the data.</i></li>
+                <li><i>StandardScaler: Used for normalizing data to ensure that each feature contributes equally to the analysis.</i></li>
+            </ul>
+
+        <hr>
+
+        <h3 class="myglow">Thanks for visiting our project</h3>
+    </div>
+
+    <div class="footer">
+        <p class="glow">&copy; 2024 CROP PREDICTION System</p>
+    </div>
+
+</body>
+</html>
